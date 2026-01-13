@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальные жемчужины</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .artist-block {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .artist-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .artist-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .artist-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .artist-title {
+            font-size: 2.5em;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .artist-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .tracks-section {
+            margin-top: 30px;
+        }
+
+        .tracks-title {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .track-item {
+            margin-bottom: 25px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .track-name {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-error {
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .video-error a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .video-error a:hover {
+            text-decoration: underline;
+        }
+
+        .playlist-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .playlist-link:hover {
+            background: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .artist-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .artist-title {
+                font-size: 2em;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Музыкальные жемчужины 🎵</h1>
+
+        <!-- Miss Kitten -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="misskittin.jpeg" alt="Miss Kittin" class="artist-image">
+                <h2 class="artist-title">Miss Kittin</h2>
+            </div>
+            <div class="artist-description">
+                Французская артистка. Начал слушать ее в 10-ом классе. Скорее всего это первая техно-музыка с которой я познакомился.
+                О_О ей уже 52 года.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Life On MTV</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/YUE-Bxl8PNk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Frank Sinatra</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/yXN2UrmdRHY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">1982</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QkmMNtr7mDE?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crystal Castles -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="crystalcastles.jpeg" alt="Crystal Castles" class="artist-image">
+                <h2 class="artist-title">Crystal Castles</h2>
+            </div>
+            <div class="artist-description">
+                Канадская электронная экспериментальная группа. С имиджем эмо. Начал слушать в то же школьное время.
+                Треки сильно отличаются по скорости и интесивности
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Alice Practice</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/u1W3kJ4Rza4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Crimewave</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/5d-zmZhJDuM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Not in Love</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Xid2BhGV_2s?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Knife -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="knife.jpeg" alt="The Knife" class="artist-image">
+                <h2 class="artist-title">The Knife</h2>
+            </div>
+            <div class="artist-description">
+                Шведская группа. Слушал их в школе тоже.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Neverland</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OaxBS_gnB-c?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Pass is on (Гениальный клип, особенно для того времени)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/6UeQLO43a2Y?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Pass is on (песня)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/p7tGg8_Thpc?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Silent Shout</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/vVPf5_V5BVw?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AUX 88 -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="AUX88LIVE.jpg" alt="AUX 88" class="artist-image">
+                <h2 class="artist-title">AUX 88</h2>
+            </div>
+            <div class="artist-description">
+                Детройт-техно. Отдельный жанр, один из основополагающих, появился в 1980-ых.
+                Это черные мужики в белых халатах. Был на их выступлении в Питере. Мое самое сильное впечатление от музыкальных выступлений.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Alias</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/JPwsJ_gHNrI?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">My Aux Mind</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/B9OitGcOMPY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Electro Slaves</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/GGtsJ_5yIBg?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gus Gus -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="gusgus.jpg" alt="Gus Gus" class="artist-image">
+                <h2 class="artist-title">Gus Gus</h2>
+            </div>
+            <div class="artist-description">
+                Исландская группа. Выглядят как викинги. И в звуке чувствуется исландская суровость. Был на их концерте два раза
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Over</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QqMAf5UUK6M?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Arabian Horse</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/IO5Nsy_REa4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Airwaves</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/vZj1OMVDgD0?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jamie XX -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="jamiexx.jpeg" alt="Jamie XX" class="artist-image">
+                <h2 class="artist-title">Jamie XX</h2>
+            </div>
+            <div class="artist-description">
+                Британский музыкант. Участник группы The XX, ты точно знаешь из трек.
+                У него есть этот клип. Он меня очень поразил.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">The XX - трек</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Pib8eYDSFEI?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Клип (поразил)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/hTGJfRPLe08?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tiga -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="tiga.jpeg" alt="Tiga" class="artist-image">
+                <h2 class="artist-title">Tiga</h2>
+            </div>
+            <div class="artist-description">
+                Канадский музыкант. Оч сладко выглядит. О_О ему 51 году уже. Очень стильные треки. Как будто идельная музыка для даймонд вечеринок.
+                Был на его выступление в Нью Йорке.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">You gonna want me</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/UG1QPlR4X04?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Pleasure From The Bass</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/iGB2OpxiWgQ?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Bugatti (Хороший клип)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/CFg6amMLd-o?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Sunglasses at night (Один из самых популярных треков. Это ремикс, который лучше оригинла)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/l7tNo5S6xEE?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bicep -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="bicep.jpeg" alt="Bicep" class="artist-image">
+                <h2 class="artist-title">Bicep</h2>
+            </div>
+            <div class="artist-description">
+                Ирландский музыкант. Делает достаточно уникальную музыку. Его треки можно узнавать по стилю.
+                Был в Лондоне на его выступлении на Boiler Room.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Glue (Этот завирусился 2017 году)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/lXc8EHmFXOM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Just (Мой любимый более ранний, от него мурашки даже)</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/NLAYDvGLbFY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moby -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="moby.jpeg" alt="Moby" class="artist-image">
+                <h2 class="artist-title">Moby</h2>
+            </div>
+            <div class="artist-description">
+                Моби ты знаешь точно. НО у него есть потрясающие альбомы с электронной эмбиент музыкой.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Calm. Sleep.</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/e7M6TEE2E_w?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">И весь альбом</div>
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mBcYkQop4Wx-4QbyxRkA08YM0KYTjpqMM&si=aFKz0QhCgJfdXY2r" class="playlist-link" target="_blank">Открыть плейлист на YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daniel Avery -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="danielavery.jpeg" alt="Daniel Avery" class="artist-image">
+                <h2 class="artist-title">Daniel Avery</h2>
+            </div>
+            <div class="artist-description">
+                Английский музыкант. Родом из места, где живет мой брат. Эталонное техно.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Naive Response</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Kfh8pdnlmVk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Drone Logic</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/eS0CO-yPmO4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kraftwerk -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="kraftwerk.jpeg" alt="Kraftwerk" class="artist-image">
+                <h2 class="artist-title">Kraftwerk</h2>
+            </div>
+            <div class="artist-description">
+                Немецкая группа 1968 год. Одни из родоначальников электронной музыки в целом.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Клип 1978 года! (на 2 мин 5 сек поют на русском). В общем чистое искусство.</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/D_8Pma1vHmw?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Более свежее выступление</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/0EBTn_3DBYo?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charlie - Spacer Woman -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="spacerwoman.jpg" alt="Charlie - Spacer Woman" class="artist-image">
+                <h2 class="artist-title">Charlie - Spacer Woman</h2>
+            </div>
+            <div class="artist-description">
+                1983 год. Считаю этот трек – лучшим треком всех времен.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <div class="track-name">Трек</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3nY9DGdsuRs?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="track-item">
+                    <div class="track-name">Клип</div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/s4p3-SQjcNQ?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kyle Dixon & Michael Stein -->
+        <div class="artist-block">
+            <div class="artist-header">
+                <img src="strangerthings.jpg" alt="Kyle Dixon & Michael Stein" class="artist-image">
+                <h2 class="artist-title">Kyle Dixon & Michael Stein</h2>
+            </div>
+            <div class="artist-description">
+                Музыканты, которые написали музыку для Stranger Things.
+            </div>
+            <div class="tracks-section">
+                <h3 class="tracks-title">Треки</h3>
+                <div class="track-item">
+                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mdCf04m8PPOvCCFniNFv5MrL6VEmoxKDU&si=ZQ90C1biM952pzdL" class="playlist-link" target="_blank">Плейлист на YouTube</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
