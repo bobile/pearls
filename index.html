@@ -154,6 +154,47 @@
             background: #764ba2;
         }
 
+        .video-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #f0f0f0;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .video-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .intro-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .intro-title {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .intro-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             .artist-header {
                 flex-direction: column;
@@ -174,7 +215,13 @@
     <div class="container">
         <h1>🎵 Музыкальные жемчужины 🎵</h1>
 
-        <!-- Miss Kitten -->
+        <div class="intro-section">
+            <h2 class="intro-title">Иностранные артисты</h2>
+            <p class="intro-description">Собрал то, с чего сам начинал слушать, и что произвело впечатление</p>
+            <a href="https://music.youtube.com/watch?v=uWzlWvjv6LQ&si=aabbwuAVF8C_spMZ" class="playlist-link" target="_blank">🎵 Весь плейлист на YouTube</a>
+        </div>
+
+        <!-- Miss Kittin -->
         <div class="artist-block">
             <div class="artist-header">
                 <img src="misskittin.jpeg" alt="Miss Kittin" class="artist-image">
@@ -191,18 +238,21 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/YUE-Bxl8PNk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=YUE-Bxl8PNk&si=JcCJH8chpE8NWkMH" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Frank Sinatra</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/yXN2UrmdRHY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=yXN2UrmdRHY&si=Kk2yXAveMdsGl9BA" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">1982</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/QkmMNtr7mDE?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=QkmMNtr7mDE&si=12AdKlrCs7Y6MSaZ" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -224,18 +274,21 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/u1W3kJ4Rza4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=u1W3kJ4Rza4&si=xJnVt6C8RA_w4Alu" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Crimewave</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/5d-zmZhJDuM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=5d-zmZhJDuM&si=Q0P_KBdCFgomGbzO" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Not in Love</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/Xid2BhGV_2s?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=Xid2BhGV_2s&si=-83WoBUu48sxNre1" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -256,24 +309,28 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/OaxBS_gnB-c?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=OaxBS_gnB-c&si=B3OBHTMdFa2QfpqW" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Pass is on (Гениальный клип, особенно для того времени)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/6UeQLO43a2Y?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://youtu.be/6UeQLO43a2Y?si=Iq4bUxPPdd-9f0l3" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Pass is on (песня)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/p7tGg8_Thpc?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=p7tGg8_Thpc&si=_fXUKXIKAkO42nH_" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Silent Shout</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/vVPf5_V5BVw?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=vVPf5_V5BVw&si=LVqaSimxfvIvPLsv" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -295,18 +352,21 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/JPwsJ_gHNrI?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=JPwsJ_gHNrI&si=l1e34-_vRkj0eEqp" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">My Aux Mind</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/B9OitGcOMPY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=B9OitGcOMPY&si=CXwx5oL0UoymggNk" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Electro Slaves</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/GGtsJ_5yIBg?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=GGtsJ_5yIBg&si=NPh99xqRsG8oXMFF" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -327,18 +387,21 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/QqMAf5UUK6M?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=QqMAf5UUK6M&si=o0UtTTR09C6t5q71" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Arabian Horse</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/IO5Nsy_REa4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=IO5Nsy_REa4&si=7n-XR-Fi3zGT0wmx" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Airwaves</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/vZj1OMVDgD0?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=vZj1OMVDgD0&si=PHrTdb9tUoBJau7v" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -360,12 +423,14 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/Pib8eYDSFEI?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=Pib8eYDSFEI&si=0QyHTUUg6BAMzZg9" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Клип (поразил)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/hTGJfRPLe08?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://www.youtube.com/watch?v=hTGJfRPLe08" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -387,24 +452,28 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/UG1QPlR4X04?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=UG1QPlR4X04&si=vc_XEwSd-fCtqV7c" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Pleasure From The Bass</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/iGB2OpxiWgQ?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=iGB2OpxiWgQ&si=9jl1FthU84qjUaYG" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Bugatti (Хороший клип)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/CFg6amMLd-o?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://www.youtube.com/watch?v=CFg6amMLd-o" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Sunglasses at night (Один из самых популярных треков. Это ремикс, который лучше оригинла)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/l7tNo5S6xEE?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=l7tNo5S6xEE&si=qspfqIMdzwvDUzfb" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -426,12 +495,14 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/lXc8EHmFXOM?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=lXc8EHmFXOM&si=BOATGMnieMWPE22V" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Just (Мой любимый более ранний, от него мурашки даже)</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/NLAYDvGLbFY?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=NLAYDvGLbFY&si=Lna9sWUw-frq-wXE" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -450,12 +521,9 @@
                 <div class="track-item">
                     <div class="track-name">Calm. Sleep.</div>
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/e7M6TEE2E_w?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/uWzlWvjv6LQ?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </div>
-                <div class="track-item">
-                    <div class="track-name">И весь альбом</div>
-                    <a href="https://music.youtube.com/playlist?list=OLAK5uy_mBcYkQop4Wx-4QbyxRkA08YM0KYTjpqMM&si=aFKz0QhCgJfdXY2r" class="playlist-link" target="_blank">Открыть плейлист на YouTube</a>
+                    <a href="https://music.youtube.com/watch?v=uWzlWvjv6LQ&si=aabbwuAVF8C_spMZ" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -476,12 +544,14 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/Kfh8pdnlmVk?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=Kfh8pdnlmVk&si=L5PPyiKSVYzh034p" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Drone Logic</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/eS0CO-yPmO4?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=eS0CO-yPmO4&si=rIG-gr6iYa64n2Ci" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -502,12 +572,14 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/D_8Pma1vHmw?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://www.youtube.com/watch?v=D_8Pma1vHmw" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Более свежее выступление</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/0EBTn_3DBYo?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://www.youtube.com/watch?v=0EBTn_3DBYo" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>
@@ -528,12 +600,14 @@
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/3nY9DGdsuRs?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://music.youtube.com/watch?v=3nY9DGdsuRs&si=EmNSw0Bubbww-5pb" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
                 <div class="track-item">
                     <div class="track-name">Клип</div>
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/s4p3-SQjcNQ?rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <a href="https://youtu.be/s4p3-SQjcNQ?si=uo0JD-xZHDLrV-c_" class="video-link" target="_blank">Открыть на YouTube</a>
                 </div>
             </div>
         </div>

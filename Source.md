@@ -1,4 +1,8 @@
-#### Miss Kitten
+### Иностранные артисты
+Собрал то, с чего сам начинал слушать, и что произвело впечатление
+Весь плейлист https://music.youtube.com/watch?v=uWzlWvjv6LQ&si=aabbwuAVF8C_spMZ
+
+#### Miss Kittin
 ![alt text](misskittin.jpeg)
 
 Французская артистка. Начал слушать ее в 10-ом классе. Скорее всего это первая техно-музыка с которой я познакомился.
@@ -78,8 +82,7 @@ Pleasure From The Bass https://music.youtube.com/watch?v=iGB2OpxiWgQ&si=9jl1FthU
 
 Моби ты знаешь точно. НО у него есть потрясающие альбомы с электронной эмбиент музыкой.
 
-Calm. Sleep. https://music.youtube.com/watch?v=e7M6TEE2E_w&si=2KMYdYo2dz3yxe0N
-И весь альбом https://music.youtube.com/playlist?list=OLAK5uy_mBcYkQop4Wx-4QbyxRkA08YM0KYTjpqMM&si=aFKz0QhCgJfdXY2r
+Calm. Sleep. https://music.youtube.com/watch?v=uWzlWvjv6LQ&si=aabbwuAVF8C_spMZ
 
 #### Daniel Avery
 ![alt text](danielavery.jpeg)
@@ -109,3 +112,6 @@ Drone Logic https://music.youtube.com/watch?v=eS0CO-yPmO4&si=rIG-gr6iYa64n2Ci
 
 Музыканты, которые написали музыку для Stranger Things.
 https://music.youtube.com/playlist?list=OLAK5uy_mdCf04m8PPOvCCFniNFv5MrL6VEmoxKDU&si=ZQ90C1biM952pzdL
+
+----
+Весь плейлист https://music.youtube.com/watch?v=uWzlWvjv6LQ&si=aabbwuAVF8C_spMZ
